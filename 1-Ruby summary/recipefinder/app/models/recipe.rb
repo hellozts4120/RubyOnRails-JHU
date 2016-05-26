@@ -1,3 +1,4 @@
+
 ENV["FOOD2FORK_KEY"] = '2cf6a2d23beae9518d7fa73aad4948cc'
 
 class Recipe
