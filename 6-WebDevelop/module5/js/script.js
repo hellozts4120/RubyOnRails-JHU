@@ -115,8 +115,8 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      chosenCategoryShortName = "randomCategoryShortName", "'" + chosenCategoryShortName + "'"
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, chosenCategoryShortName);
+      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -319,7 +319,7 @@ function insertItemPrice(html,
   }
 
   priceValue = "$" + priceValue.toFixed(2);
-  html = insertProperty(html, pricePropName, priceValue);
+  html = insertProperty(html, pricePrloadMenuItemsopName, priceValue);
   return html;
 }
 
