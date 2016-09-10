@@ -319,7 +319,7 @@ function insertItemPrice(html,
   }
 
   priceValue = "$" + priceValue.toFixed(2);
-  html = insertProperty(html, pricePrloadMenuItemsopName, priceValue);
+  html = insertProperty(html, pricePropName, priceValue);
   return html;
 }
 
