@@ -14,20 +14,20 @@
         
         $scope.narrowDown = function () {
             $rootScope.$broadcast('narrow:processing', {on: true});
-            MenuSearchService.getMatchedMenuItems(narrow.searchInput).then(function (data) {
-                narrow.found = data;
+            MenuSearchService.getMatchedMenuItems($scope.searchInput).then(function (data) {
+                $scope.found = data;
 
                 $rootScope.$broadcast('narrow:processing', {on: false});
-                if (!narrow.found.length) {
-                    narrow.message = "Nothing found";
+                if (!$scope.found.length) {
+                    $scope.message = "Nothing found";
                 } else {
-                    narrow.message = "";
+                    $scope.message = "";
                 }
             });
         };
         
         $scope.removeItem = function (index) {
-            narrow.found.splice(index, 1);
+            $scope.found.splice(index, 1);
         };
     }
 })(angular);
