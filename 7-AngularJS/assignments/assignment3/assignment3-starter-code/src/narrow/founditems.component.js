@@ -3,7 +3,7 @@
     angular.module('NarrowItDownApp')
         .component('foundItems', {
             controller: FoundItemsController,
-            templateUrl: 'src/loader/founditems.template.html',
+            templateUrl: 'src/narrow/founditems.template.html',
             bindings: {
                 foundItems: '<foundItems',
                 onRemove: '&'
