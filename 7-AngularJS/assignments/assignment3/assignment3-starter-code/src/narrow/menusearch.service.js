@@ -21,7 +21,7 @@
             }
         };
         
-        function searchItems() {
+        function searchItems(searchInput) {
             var res = [];
             var defer = $q.defer();
             searchInput = searchInput.trim().toLowerCase();
