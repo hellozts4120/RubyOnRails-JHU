@@ -2,6 +2,6 @@
     'use strict';
 
     angular.module('NarrowItDownApp')
-        .constant('ApiBasePath', "http://davids-restaurant.herokuapp.com");
+        .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com/menu_items.json");
 
 })(angular);
