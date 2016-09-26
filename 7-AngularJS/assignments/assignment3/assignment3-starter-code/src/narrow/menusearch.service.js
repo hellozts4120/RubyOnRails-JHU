@@ -32,7 +32,7 @@
                         res.push(itemList[i]);
                     }
                 }
-                defer.resolve(found);
+                defer.resolve(res);
             }, 1000);
             
             return defer.promise;
