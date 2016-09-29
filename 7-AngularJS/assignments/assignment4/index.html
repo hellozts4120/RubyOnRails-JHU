@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+<head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <h1>Welcome to our Restaurant</h1>
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/narrow/narrow.module.js"></script>
+    <script src="src/loader/loader.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'Narrow' module artifacts -->
+    <script src="src/narrow/founditems.component.js"></script>
+    <script src="src/narrow/narrow.controller.js"></script>
+    <script src="src/narrow/narrow.constants.js"></script>
+    <script src="src/narrow/menusearch.service.js"></script>
+
+    <script src="src/loader/loader.component.js"></script>
+
+    <!-- 'Spinner' module artifacts -->
+    <!-- <script src="src/spinner/loadingspinner.component.js"></script> -->
+
+</body>
+</html>
