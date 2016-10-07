@@ -3,8 +3,8 @@
 <head>
     <title>Narrow Down Your Menu Choice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     
@@ -13,26 +13,31 @@
     <ui-view></ui-view>
 
     <!-- Libraries -->
-    <script src="lib/jquery-3.1.0.min.js"></script>
-    <script src="lib/angular.min.js"></script>
+    <script src="./lib/jquery-3.1.0.min.js"></script>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular-ui-router.min.js"></script>
 
-    <!-- Modules -->
-    <script src="src/narrow/narrow.module.js"></script>
-    <script src="src/loader/loader.module.js"></script>
+    <!-- modules -->
+    <script src="./src/MenuApp/menuapp.module.js"></script>
+    <script src="./src/MenuData/data.module.js"></script>
 
-    <!-- Routes -->
-    <script src="src/routes.js"></script>
+    <!-- routes -->
+    <script src="./src/routes.js"></script>
 
-    <!-- 'Narrow' module artifacts -->
-    <script src="src/narrow/founditems.component.js"></script>
-    <script src="src/narrow/narrow.controller.js"></script>
-    <script src="src/narrow/narrow.constants.js"></script>
-    <script src="src/narrow/menusearch.service.js"></script>
+    <!-- shared artifacts -->
+    <script src="./src/MenuData/menudata.service.js"></script>
 
-    <script src="src/loader/loader.component.js"></script>
+    <!-- categories -->
+    <script src="./src/MenuApp/categories.controller.js"></script>
+    <script src="./src/MenuApp/categories.component.js"></script> <!-- component is not strictly necessary but suggested in assignment instructions -->
 
-    <!-- 'Spinner' module artifacts -->
-    <!-- <script src="src/spinner/loadingspinner.component.js"></script> -->
+    <!-- items in a category -->
+    <script src="./src/MenuApp/items.controller.js"></script>
+    <script src="./src/MenuApp/items.component.js"></script> <!-- component is not strictly necessary but suggested in assignment instructions -->
+
+</body>
+</html>
+
 
 </body>
 </html>

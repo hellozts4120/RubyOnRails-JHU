@@ -1,0 +1,18 @@
+<div ng-if="$ctrl.categoryName === ''">
+  <h3>Sorry, there is no category {{$ctrl.categoryShortName}}</h3>
+  <a ui-sref="home">home</a> &gt; <a ui-sref="categories">categories</a> &gt; unknown category {{$ctrl.categoryShortName}}
+</div>
+
+<div ng-if="$ctrl.categoryName !== ''">
+  <div ng-if="$ctrl.categoryShortName.length > 0">
+    <h3>There are {{$ctrl.items.length}} items in category {{$ctrl.categoryShortName}} - {{$ctrl.categoryName}}</h3>
+    <a ui-sref="home">home</a> &gt; <a ui-sref="categories">categories</a> &gt; category {{$ctrl.categoryShortName}}
+  </div>
+
+  <div ng-if="$ctrl.categoryShortName.length == 0">
+    <h3>There are {{$ctrl.items.length}} items in all categories</h3>
+    <a ui-sref="home">home</a> &gt; <a ui-sref="categories">categories</a> &gt; all categories
+  </div>
+
+  <items items="$ctrl.items"></items>
+</div>

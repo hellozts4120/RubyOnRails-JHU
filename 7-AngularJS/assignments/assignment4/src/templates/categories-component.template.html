@@ -1,0 +1,17 @@
+<table class="table">
+
+  <tr>
+      <th>ID</th>
+      <th>Short Name</th>
+      <th>Name</th>
+      <th>Special Instructions</th>
+  </tr>
+
+  <tr ng-repeat="item in $ctrl.items" ui-sref="category({categoryShortName: item.short_name})" class="clickable-row">
+    <td>{{ item.id }}</td>
+    <td>{{ item.short_name }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.special_instructions }}</td>
+  </tr>
+
+</table>
