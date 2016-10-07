@@ -30,7 +30,7 @@
       templateUrl: 'src/templates/categories.template.html',
       controller: 'CategoriesController as categories',
       resolve: {
-        items: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
+        data: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
           return MenuDataService.getAllCategories();
         }]
       },
@@ -47,7 +47,7 @@
       templateUrl: 'src/templates/items.template.html',
       controller: 'ItemsController as categories',
       resolve: {
-        items: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
+        data: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
           return MenuDataService.getItemsForCategory($stateParams.cataId);
         }]
       },
