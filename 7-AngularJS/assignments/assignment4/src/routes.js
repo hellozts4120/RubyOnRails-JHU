@@ -43,7 +43,7 @@
 
     // category items list page
     .state('category', {
-      url: '/categories/{cataId}',
+      url: '/category/{cataId}',
       templateUrl: 'src/templates/items.template.html',
       controller: 'ItemsController as $ctrl',
       resolve: {

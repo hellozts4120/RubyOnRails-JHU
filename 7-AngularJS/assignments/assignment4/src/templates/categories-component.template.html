@@ -7,7 +7,7 @@
       <th>Special Instructions</th>
   </tr>
 
-  <tr ng-repeat="item in $ctrl.items" ui-sref="category({categoryShortName: item.short_name})" class="clickable-row">
+  <tr ng-repeat="item in $ctrl.items" ui-sref="category({cataId: item.short_name})" class="clickable-row" style="cursor: pointer;">
     <td>{{ item.id }}</td>
     <td>{{ item.short_name }}</td>
     <td>{{ item.name }}</td>
