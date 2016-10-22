@@ -1,0 +1,31 @@
+<div class="container" ng-if="infoCtrl.info !== undefined">
+  <form>
+    <div class="form-group">
+      <label>First name</label>
+      <span class="form-control">{{infoCtrl.info.firstName}}</span>
+    </div>
+    <div class="form-group">
+      <label>Last name</label>
+      <span class="form-control">{{infoCtrl.info.lastName}}</span>
+    </div>
+    <div class="form-group">
+      <label>Email address</label>
+      <span class="form-control">{{infoCtrl.info.email}}</span>
+    </div>
+    <div class="form-group">
+      <label>Phone number</label>
+      <span class="form-control">{{infoCtrl.info.phone}}</span>
+    </div>
+    <div class="form-group">
+      <label>Favorite dish</label>
+      <br>
+      <menu-item menu-item="infoCtrl.info.menuItem"></menu-item>
+    </div>
+  </form>
+</div>
+<div class="container" ng-if="infoCtrl.info === undefined">
+  <div class="alert alert-info" role="alert">Not Signed Up Yet.</div>
+  <button ui-sref="public.sign-up" class="btn btn-primary">
+    Sign up Now!
+  </button>
+</div>
